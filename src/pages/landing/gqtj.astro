@@ -1,0 +1,40 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: '歌曲推荐',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Content
+    isReversed
+    image={{
+      src: '/2.jpg',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">中文说唱歌曲推荐：</h3>
+      <p>1.《life is a struggle》</p>
+      <p>2.《轻熟女27》</p>
+      <p>3.《穷孩子》</p>
+      <p>4.《关于小熊》</p>
+      <p>5.《uda》</p>
+      <p>6.《威远故事》</p>
+      <p>7.《亲密爱人》</p>
+      <p>8《迷途羔羊》</p>
+      <p>9《三思而后行》</p>
+      <p>10《青衣/诗人说梦》</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+</Layout>

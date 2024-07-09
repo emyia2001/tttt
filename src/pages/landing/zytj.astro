@@ -1,0 +1,37 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: '综艺推荐',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Content
+    isReversed
+    image={{
+      src: '/3.jpg',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">中文说唱综艺推荐：</h3>
+      <p>1、《说唱梦工厂》</p>
+      <p>2、《黑怕女孩》</p>
+      <p>3、《少年说唱企划》</p>
+      <p>4、《说唱听我的》</p>
+      <p>5、《大嘻哈时代》</p>
+      <p>6、《说唱新世代》</p>
+      <p>7、《中国新说唱》系列节目（《新说唱2024》、《中国说唱巅峰对决2023》、《中国说唱巅峰对决》、《中国新说唱2020》、《中国新说唱2019》、《中国新说唱
+        2018》、《中国有嘻哈》)</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+</Layout>

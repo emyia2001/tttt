@@ -1,0 +1,32 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: '说唱介绍',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Hero
+  image={{
+    src: '/1.jpg',
+    alt: 'Magnet attracting screws. Lead generation landing page demo',
+  }}
+  >
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white highlight"> 说唱介绍</span><br>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        说唱，一种音乐风格，在音乐伴奏下吟唱（“说唱”）有节奏和/或押韵的演讲。这种背景音乐可以包括数字采样（从其他录音中提取的音乐和声音），也称为嘻哈音乐，该名称用于指代更广泛的文化运动，包括说唱、DJ（转盘操作)、涂鸦绘画和霹雳舞。  
+        唱起源于纽约市的非裔美国人社区，随着Sugar Hill Gang的“说唱歌手的喜悦》（1979)。Rap的早期明星包括Grandmaster Flash 和速度与激情五人组、Run-DMC、LLCoolJ、Public Enemy（拥护激进的政治信息）和Beastie Boyso20世纪80年代木出现了“黑帮说唱”，其歌词常常带有厌恶女性的色彩，或者美化暴力和毒品交易。
+      </span>
+    </Fragment>
+  </Hero>
+</Layout>

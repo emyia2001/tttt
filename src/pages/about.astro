@@ -1,0 +1,24 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: '关于我们',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Hero>
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white highlight"> 关于我们</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        这里不仅仅是一个展示我个人喜好的平台，更是一个希望与志同道合的朋友共享喜悦、交流感悟的社区。我鼓励大家留言、讨论，分享自己的书影体验，共同构建一个充满爱与温暖的书影世界。在这里，每一本书、每一部电影都是一个故事，而我，就是那个愿意为您讲述这些故事的人。让我们一起，在这里，寻找那份属于自己的感动与启迪，让心灵在书影的海洋中自由翱翔。
+      </span>
+    </Fragment>
+  </Hero>

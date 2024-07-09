@@ -1,0 +1,89 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: '书籍推荐',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- <Hero>
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white highlight"> 说唱类别</span><br>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        在这里，我精心挑选并分享了我挚爱的书籍，它们或引领我穿梭于历史的长河，或带我遨游于未来的幻想；有的细腻描绘人性的光辉与阴暗，有的则深刻探讨生命的意义与价值。每一本书都是一次心灵的旅行，我希望通过我的分享，让更多人感受到阅读的魅力，找到那份属于自己的精神食粮。
+      </span>
+    </Fragment>
+  </Hero> -->
+
+  <Features2
+  title="说唱类别"
+  subtitle=""
+  tagline="Category"
+  items={[
+    {
+      title: 'Trap',
+      description: "Trap:陷阱说唱，可以说成是由南部说唱演化而来的一种说唱音乐类型，南部说唱在编曲上会更加多样化，对于鼓点和音效的运用比较杂乱，有大量的hi-hat和808bass，所以trap是根据编曲来划分的。",
+    },
+    {
+      title: 'Drill',
+      description:
+        "发源于美国芝加哥，来自街头帮派的Drill music歌词内容多以社会底层的帮派生活、枪支暴力等元素为主。后来drill传到伦敦后形成UKDrill，但由于歌词过于露骨，也被禁止传播。你可能常听到网上说“中国没有真正的Drill”,这是因为中国不具有drill的文化土壤，不过中国也可以有Drill作品，只是没有Drill文化。",
+    },
+    {
+      title: 'Boombap',
+      description:
+        '"boombap"是鼓点的拟声词的演化，其中boom代表着底鼓，bap代表着军鼓，合起来就是boombap的节奏型（在这类说唱作品中很明显能听出来）。',
+    },
+    {
+      title: 'Hardcore',
+      description:
+        "与G-funk都是按照地理来划分的，即东海岸说唱，直译为硬核说唱，主要是用激进的嗓音和直白的词，冲击力的演唱完成的说唱，经常被提到的匪帮说唱可以说是属于硬核说唱。",
+    },
+    {
+      title: 'Melodic rap',
+      description:
+        '旋律说唱，在说唱中加入很多旋律的部分，更偏流行也更容易被大众接受，容易出热单，但又在歌词、Flow、伴奏或者Beat、结构、配器等方面区别于pop music。',
+    },
+    {
+      title: 'Conscious rap',
+      description: '意识说唱，也类同于歌词说唱，会很在歌词上下功夫，用深刻的歌词去披露一些现象本质，使得人在思考中进行行动与反抗。',
+    },
+    {
+      title: 'Pop Rap',
+      description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+    },
+    {
+      title: 'Contact',
+      description:
+        '流行说唱，很简单，就是将说唱与流行乐结合',
+    },
+    {
+      title: 'G-funk',
+      description: "G-Funk:其中G代表gangsta(匪帮)，funk代表着音乐的采样类型，由于采样的是funky music所以往往节奏强烈,富有律动感。",
+    },
+    {
+      title: 'Jazz Rap',
+      description: "即爵士说唱，是黑人音乐与主流音乐的一次结合尝试，会加入很多爵士的采样，判断依据即采样是否有大量爵士元素。",
+    },
+    {
+      title: 'Mumble rap',
+      description: "模糊说唱，最大的特点就是吐词模糊不仔细听就很难听明白人声更融入到伴奏。",
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
+  
+</Layout>

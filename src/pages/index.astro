@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Hero image={{ src: '/4.jpg', alt: '' }}>
+    <Fragment slot="title">
+      欢迎来到 <span class="hidden xl:inline"></span><br>
+      <span class="text-accent dark:text-white highlight"> “HiPHOP School”</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        在今天的世界里，说唱已经不仅仅是一种音乐，更是一种文化，一种态度，一种生活方式，它把年轻人们的生活理念和价值观表达得淋漓尽致。无论你身在何处，只要你喜欢说唱，你就可以通过这一文化走近世界，了解不同的文化背景和生活方式，从而更好地理解和体验这个多元化的世界。在HiPHOP School”里，有着我对说唱的理解，欢迎大家一起体验了解说唱。
+      </span>
+    </Fragment>
+  </Hero>
+</Layout>
